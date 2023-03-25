@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.jzvd.JzvdStd
+        android:id="@+id/lvitem_main_video_jzvd"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/lvitem_main_video_avatar_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/lvitem_main_video_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/lvitem_main_video_avatar_iv"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="aaaa" />
+
+        <TextView
+            android:id="@+id/lvitem_main_video_like_tv"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawableStart="@mipmap/icon_heart"
+            android:drawablePadding="5dp"
+            android:textSize="12sp"
+            tools:text="123" />
+
+        <TextView
+            android:id="@+id/lvitem_main_video_comment_tv"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/lvitem_main_video_like_tv"
+            android:drawableStart="@mipmap/icon_comment"
+            android:drawablePadding="5dp"
+            android:textSize="12sp"
+            tools:text="123" />
+
+        <TextView
+            android:id="@+id/lvitem_main_video_signature_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lvitem_main_video_author_tv"
+            android:layout_alignStart="@id/lvitem_main_video_author_tv"
+            android:layout_toStartOf="@id/lvitem_main_video_comment_tv"
+            android:textSize="11sp"
+            tools:text="哈哈哈哈" />
+
+    </RelativeLayout>
+
+</LinearLayout>
