@@ -1,0 +1,2 @@
+# SimpleVideoPlayer
+Android study project
